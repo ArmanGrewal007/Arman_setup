@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 alias python=python3
 
 ### Added by Zinit's installer
@@ -104,4 +104,14 @@ export NVM_DIR="$HOME/.nvm"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
+eval "$(nodenv init -)"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# Manual up command
+# Usage: up [n] [path]
+up() {
+  local ups=""
+  for ((i=0; i<$1; i++)); do ups+="../"; done
+  shift
+  cd "$ups$*"
+}

@@ -10,7 +10,10 @@
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font
-brew install git pyenv fzf
+brew install git pyenv nodenv fzf
+nodenv install --list
+# Manually install latest/required node version
+nodenv install 23.11.1 && nodenv global 23.11.1
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ``` 
