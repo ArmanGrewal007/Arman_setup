@@ -6,14 +6,15 @@
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-3. `brew install git pyenv`
-4. Necessary requirements for [current .zshrc](#contents-of-zshrc) &rarr; Install a nerdfont, fzf
+3. Necessary requirements for [current .zshrc](#contents-of-zshrc) &rarr; Install a nerdfont, pyenv, fzf, vimplug
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono-nerd-font
-brew install fzf
-```
-5. Just copy the `.zshrc`
+brew install git pyenv fzf
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+``` 
+4. Just copy the `.zshrc` and `.vimrc`
 
 
 #### Contents of .zshrc
