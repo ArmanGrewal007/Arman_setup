@@ -18,7 +18,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ``` 
 4. Just copy the `.zshrc` and `.vimrc`
-
+5. To set the same font in VSCode terminal. 
+    - `Cmd + Shift + P` &rarr; Preferences: Open Settings (UI)
+    - In Font Family put `MesloLGS NGF` ... and the icons will be visible in your vscode terminal.
 
 #### Contents of .zshrc
 > Copy paste the .zshrc
